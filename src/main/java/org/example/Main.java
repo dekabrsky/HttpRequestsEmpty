@@ -1,8 +1,14 @@
 package org.example;
 
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
-        // вызвать httpRepository
+    public static void main(String[] args) throws IOException {
+        var carsData = CarsDataSource.getCarsData();
+        // Какая страна - родина марки Cupra?
+        // Отсортируйте марки сначала по стране, а потом по количеству моделей. Выведите их имена в консоль
+        // Выведите марки, производящие хотя бы один внедорожник (класс, level J)
+        // Назовите марки, производящие только автомобили класса F (поле level)?. Отсортируйте их по алфавиту.
+        // Выведите название наиболее долго производившейся модели автомобиля. Учтите, что у некоторых yearTo не указан и их надо отфильтровать
     }
 }
